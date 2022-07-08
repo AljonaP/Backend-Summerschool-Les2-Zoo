@@ -35,7 +35,7 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
 - `int` _weight_;
 - `boolean` _givesBirth_;
 - `String` _gender_;
-5. Maak een `default constructor` en een gevulde `constructor` met alle `variabelen `als `attribuut` meegegeven, in de _Animal_ `klasse`.
+5. Maak een `default constructor` en een gevulde `constructor` waar alle `variabelen `als `attribuut` worden meegegeven in de _Animal_ `klasse`.
 6. Maak de volgende ` plubic methodes` aan in de _Animal_ klasse (deze returnen `void` en maken gebruik van een `System.out.println` met een toepasselijk zin):
 - _makesSound()_;
 - _getsFood()_;
@@ -49,19 +49,19 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
 - _Flamingo_;
 - _Penguin_;
 - _Shark_;
-8. Je ziet nu dat alle `variabelen` uit de _Animal_ `klasse` toepasselijk zijn voor alle `klassen` die je net hebt aangemaakt. Je kan dit oplossen door alles over te typen of te kopiëren. Echter heb je dan heel veel dubbele code in je app. Dat is niet zo netjes. Dit is oplosbaar door de _Animal_ `klasse` `abstract` te maken. Dan maak je namelijk de _Animal_ `klasse` een `Superklasse`. 
+8. Je ziet nu dat alle `variabelen` uit de _Animal_ `klasse` toegepast kunnen worden voor alle `klassen` die je net hebt aangemaakt. Je kan dit oplossen door alles over te typen of te kopiëren. Echter heb je dan heel veel dubbele code in je app. Dat is niet zo netjes. Dit is oplosbaar door de _Animal_ `klasse` `abstract` te maken. Dan maak je namelijk de _Animal_ `klasse` een `Superklasse`. 
 9. `Extend` nu de `Superklasse` in alle andere `klassen`. 
 10. Als je nu een `constructor` maakt in elk van de dieren `klassen`, kun je deze de `attributen` meegeven van de `Superklasse`.
-11. Dit maakt het mogelijk voor je om van elke `Sub klasse` een `object` te instantiëren in de `public static void main` methode in je _Main_ `klasse`. Doe dit door bijv. 
+11. Dit maakt het mogelijk om van elke `Sub klasse` een `object` te instantiëren in de `public static void main` methode in je _Main_ `klasse`. Doe dit door bijv. 
  _Crocodile crocodile = new Crocodile(.....)_ (zet op de puntjes de waardes van de `attributen`).
-12. In de _Animal_ `klasse` had je ook `methodes` staan. Wat gebeurt er als je nu met een instantiatie van je _Crocodile_ `klasse`, een van deze `methodes` aanroept?
-13. Dat is handig nu kan je voor elk dier deze `methode` aanroepen, en hoef je niet de `methode` voor elke `klassen` weer uit te schrijven. Maar dit houdt in dat bijvoorbeeld de croccodile met de `methode` _makesSound()_ hetzelfde geeft als dolphin. En dat is wel raar, want deze klinken niet hetzelfde.
-14. Laten we dit oplossen door alle `methodes` van de _Animal_ `klasse` in een `interface` te zetten. Geef deze `interface` de naam _MainFeatures_ en plaats hier alle `methodes` (Niet de `getters` en `setters`) in. 
+12. In de _Animal_ `klasse` had je ook `methodes` staan. Wat gebeurt er als je met een instantiatie van je _Crocodile_ `klasse`, één van deze `methodes` aanroept?
+13. Nu kan je voor elk dier deze `methode` aanroepen, en hoef je niet de `methode` voor elke `klassen` weer uit te schrijven. Maar... de croccodile met de `methode` _makesSound()_ geeft hetzelfde als dolphin. Dát is wel raar, want deze klinken niet hetzelfde.
+14. Laten we dit oplossen door alle `methodes` van de _Animal_ `klasse` in een `interface` te zetten. Geef deze `interface` de naam _MainFeatures_ en plaats hier alle `methodes` (Niet de `getters` en `setters`) in.
 15. Omdat een `interface` alleen `abstracte methodes` verwacht geeft dit een probleem. Als we de `bodies` weghalen van de `methodes` zijn deze `abstract`. Maar kunnen we hier niet gelijk gebruik van maken. Wat wel kan is de `methode` overschrijven in de `klasse` waar je deze wilt hebben. 
 16. Ga naar de _Animal_ `klasse` en plaats een `@Override` boven de bestaande `methodes`, deze mogen wel een `body` hebben, omdat deze de `abstracte methode` overschrijven. Echter als we nu de app draaien is er nog niets opgelost. 
 17. Kijk eens goed naar de `methodes`, zijn er `methodes` die altijd hetzelfde kunnen teruggeven? Ja, de `methode` _sleeps()_ bijv. die kan de `string` "Zzz Zzz Zzz" printen. Dat kan voor elk dier hetzelfde zijn. Als we kijken naar de `methode` _reproduction()_ is de uitkomst ook gelijk voor elk dier. Deze laten we staan in de _Animal_ `klasse` zonder `@Override`. De andere `methodes` (excl. `getters` en `setters`) mogen uit deze `klassen` verwijderd worden. 
 18. Haal deze 2 `methodes` weg uit de _MainFeatures_ `klasse`.
-19. Dan hou je de volgende `methodes` over in de `klasse` _MainFeatures_:
+19.Je houdt de volgende `methodes` over in de `klasse` _MainFeatures_:
  - _makesSound()_;
  - _getsFood()_;
  - _swimming()_;
