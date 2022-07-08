@@ -1,11 +1,11 @@
 
 ## Inleiding
 
-Welkom bij de eerste opdracht van de Summerschool. Deze opdracht gaat over een dierentuin. De dierentuin wil graag een applicatie hebben, waar personeel en bezoekers wat aan hebben. En deze opdracht ga jij maken. 
+Welkom bij de eerste opdracht van de Summerschool. Deze opdracht gaat over een dierentuin. De dierentuin wil graag een applicatie hebben, waar personeel en bezoekers wat aan hebben. Jij als junior developer gaat de applicatie maken!
 
 ## Opdrachtbeschrijving
 
-Je gaat een applicatie programmeren die meerdere nieuwe dieren kan aanmaken. Deze dieren hebben veel dingen gemeen, daarom gaan we kijken hoe we dit kunnen toepassen op een efficiënte manier in je code. 
+Je gaat een applicatie programmeren die meerdere nieuwe dieren kan aanmaken. De dieren hebben overeenkomsten, daarom gaan we kijken hoe we dit efficient kunnen toepassen in de code.
 
 ![Dierentuin!](./uploads/dieren.JPG)
 
@@ -24,7 +24,7 @@ Alle methodes mogen `void` teruggeven en een `system.out.println` uitvoeren.
 ## Stappenplan
 Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waar je wil beginnen kun je dit stappenplan volgen.
 1. Maak een _Main_-`klasse` aan in de `src`-map.
-2. Maak vervolgens binnen de _main_-`klasse` een _main_-`methode` aan. Anders kun je de applicatie immers niet draaien!
+2. Maak vervolgens binnen de _main_-`klasse` een _main_-`methode` aan. Anders kun je de applicatie niet draaien!
 3. Maak een _Animal_ klasse aan.
 4. In de _Animal_ klasse maken we `variabelen` aan voor:
 - `String` _name_;
