@@ -36,23 +36,25 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
 - `boolean` _givesBirth_;
 - `String` _gender_;
 5. Maak een `default constructor` en een gevulde `constructor` waar alle `variabelen `als `attribuut` worden meegegeven in de _Animal_ `klasse`.
-6. Maak de volgende ` plubic methodes` aan in de _Animal_ klasse (deze returnen `void` en maken gebruik van een `System.out.println` met een toepasselijk zin):
+6. Geef elk `private` `attribuut` een `public` `getter` en `setter`.
+7. Maak de volgende ` plubic methodes` aan in de _Animal_ klasse (deze returnen `void` en maken gebruik van een `System.out.println` met een toepasselijk zin):
 - _makesSound()_;
 - _getsFood()_;
+- _sleeps()_;
 - _swims()_;
 - _walking()_;
 - _flies()_;
 - _reproduction()_ *(maak van deze `methode` een` if statement` die checkt of de waarde van _givesBirth_ waar of onwaar is. Bij `true` print je de tekst giving brith for reproduction, bij `false` de tekst lays eggs for reproduction);
-7. Maak de volgende nieuwe klassen aan:
+8. Maak de volgende nieuwe klassen aan:
 - _Crocodile_;
 - _Dolphin_;
 - _Flamingo_;
 - _Penguin_;
 - _Shark_;
-8. Je ziet nu dat alle `variabelen` uit de _Animal_ `klasse` toegepast kunnen worden voor alle `klassen` die je net hebt aangemaakt. Je kan dit oplossen door alles over te typen of te kopiëren. Echter heb je dan heel veel dubbele code in je app. Dat is niet zo netjes. Dit is oplosbaar door de _Animal_ `klasse` `abstract` te maken. Dan maak je namelijk de _Animal_ `klasse` een `Superklasse`. 
-9. `Extend` nu de `Superklasse` in alle andere `klassen`. 
-10. Als je nu een `constructor` maakt in elk van de dieren `klassen`, kun je deze de `attributen` meegeven van de `Superklasse`.
-11. Dit maakt het mogelijk om van elke `Sub klasse` een `object` te instantiëren in de `public static void main` methode in je _Main_ `klasse`. Doe dit door bijv. 
+9. Je ziet nu dat alle `variabelen` uit de _Animal_ `klasse` toegepast kunnen worden voor alle `klassen` die je net hebt aangemaakt. Je kan dit oplossen door alles over te typen of te kopiëren. Echter heb je dan heel veel dubbele code in je app. Dat is niet zo netjes. Maak de _Animal_ `klasse` een `Superklasse` waar geen niewe instantië van aangemaakt mag worden. Dit laatste kan je doen door de `klasse` `abstract` te maken.  
+10. `Extend` nu de `Superklasse` in alle andere `klassen`. 
+11. Als je nu een `constructor` maakt in elk van de dieren `klassen`, kun je deze de `attributen` meegeven van de `Superklasse`.
+12. Dit maakt het mogelijk om van elke `Sub klasse` een `object` te instantiëren in de `public static void main` methode in je _Main_ `klasse`. Doe dit door bijv. 
  _Crocodile crocodile = new Crocodile(.....)_ (zet op de puntjes de waardes van de `attributen`).
 12. In de _Animal_ `klasse` had je ook `methodes` staan. Wat gebeurt er als je met een instantiatie van je _Crocodile_ `klasse`, één van deze `methodes` aanroept?
 13. Nu kan je voor elk dier deze `methode` aanroepen, en hoef je niet de `methode` voor elke `klassen` weer uit te schrijven. Maar... de croccodile met de `methode` _makesSound()_ geeft hetzelfde als dolphin. Dát is wel raar, want deze klinken niet hetzelfde.
@@ -67,11 +69,11 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
  - _swimming()_;
  - _walking()_;
  - _flies()_.
- Deze `methodes` zijn niet voor elk dier toepasselijk, maar als we een `interface` `implementeren` in een `klasse` moeten we wel alle `methodes` implementeren. Dit kan je oplossen door de laatste drie `methodes`, in een eigen `interface` te plaatsen. We kunnen namelijk meerdere `interfaces` implementeren in een `klasse`. 
- 20. Maak voor elk van de volgende `methodes` een eigen `interface`:
+ Deze `methodes` zijn niet voor elk dier toepasselijk, maar als we een `interface` `implementeren` in een `klasse` moeten we wel alle `methodes` implementeren. Dit kan je oplossen door de laatste drie `methodes`, in een eigen `interface` te plaatsen. We kunnen namelijk meerdere `interfaces` `implementeren` in een `klasse`. 
+20. Maak voor elk van de volgende `methodes` een eigen `interface`:
  - _swimming()_;
  - _walking()_;
  - _flies()_;  
- 21. Implementeer de `interfaces` op de juiste `klassen` en geef de `methodes` hun eigen toepasselijke zin om te printen.
+21. Implementeer de `interfaces` op de juiste `klassen` en geef de `methodes` hun eigen toepasselijke zin om te printen.
 22. We hebben tot nu toe gebruik gemaakt van de `String` _gender_, maar eigenlijk willen we die omzetten naar een `Enumeratie` of wel een `Enum`. Dit wordt voorgedaan in de workshop bij deze opdracht.  
- 22. Gefeliciteerd je app is klaar voor gebruik. Probeer van uit je _main_ `methode` te experimenteren wat allemaal mogelijk is en kijk of je misschien nieuwe dieren en of `methodes` kan toevoegen aan je app.
+23. Gefeliciteerd je app is klaar voor gebruik. Probeer van uit je _main_ `methode` te experimenteren wat allemaal mogelijk is en kijk of je misschien nieuwe dieren en of `methodes` kan toevoegen aan je app.
