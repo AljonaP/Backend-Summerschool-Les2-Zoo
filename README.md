@@ -28,7 +28,7 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
 3. Maak een _Animal_ klasse aan.
 4. In de _Animal_ klasse maken we `variabelen` aan voor:
 - `String` _name_;
-- `String` _ feature_;
+- `String` _feature_;
 - `String` _dateOfBirth_;
 - `String` _species_;
 - `String` _nutrition_;
