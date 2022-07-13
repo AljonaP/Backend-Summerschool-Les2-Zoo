@@ -13,13 +13,14 @@ Je gaat een applicatie programmeren die meerdere nieuwe dieren kan aanmaken. De 
 
 De applicatie moet voldoen aan het volgende:
 
-- Een `superklasse`;
-- 5 `subklassen`;
-- Een _Main_-`klasse` met een _main_-`methode`;
-- 4 `interfaces`;
-- 1 `Enum`.
+- Een `Superklasse`: "Animal";
+- 5 `subklassen`: "Dolphin", "Crocodile", "Flamingo", "Penguin" en "Shark".;
+- Een _Main_-klasse met een _main_-`methode` waarin de subklassen worden geïnstantieerd en je een aantal methodes van deze objecten aanroept;
+- 4 `interfaces`: "Flying", "MainFeatures", "Swimming", "Walking". In alle Interfaces beschrijf je minstens 1 relevante methode, behalve in MainFeatures, daar geef je minstens 2 methodes die niet in een van de andere interfaces thuis horen. ;
+- 1 `Enum`: "Gender".
+- Implementeer alle interfaces op de juiste plekken en maak de juiste klasse abstract.
 
-Alle methodes mogen `void` teruggeven en een `system.out.println` uitvoeren.
+Alle methodes mogen `void` teruggeven en een `system.out.println` uitvoeren, maar ja mag hier ook creatief mee zijn.
 
 ## Stappenplan
 Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waar je moet beginnen kun je dit stappenplan volgen.
