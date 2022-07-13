@@ -13,9 +13,9 @@ Je gaat een applicatie programmeren die meerdere nieuwe dieren kan aanmaken. De 
 
 De applicatie moet voldoen aan het volgende:
 
-- Een `Superklasse`;
+- Een `superklasse`;
 - 5 `subklassen`;
-- Een _Main_-klasse met een _main_-`methode`;
+- Een _Main_-`klasse` met een _main_-`methode`;
 - 4 `interfaces`;
 - 1 `Enum`.
 
@@ -51,10 +51,10 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
 - _Flamingo_;
 - _Penguin_;
 - _Shark_;
-9. Je ziet nu dat alle `variabelen` uit de _Animal_ `klasse` toegepast kunnen worden voor alle `klassen` die je net hebt aangemaakt. Je kan dit oplossen door alles over te typen of te kopiëren. Echter heb je dan heel veel dubbele code in je applicatie. Dat is niet zo netjes. Maak de _Animal_ `klasse` een `Superklasse` waar geen niewe instantie van aangemaakt mag worden. Dit laatste kan je doen door de `klasse` `abstract` te maken.  
-10. `Extent` nu de `Superklasse` in alle andere `klassen`. 
-11. Als je nu een `constructor` maakt in elk van de dieren `klassen`, kun je deze de `attributen` meegeven van de `Superklasse`.
-12. Dit maakt het mogelijk om van elke `Sub klasse` een `object` te instantiëren in de `public static void main` methode in je _Main_ `klasse`. Doe dit door bijvoorbeeld _Crocodile crocodile = new Crocodile(.....)_ erin te zetten. (zet op de puntjes de waarden van de `attributen`)
+9. Je ziet nu dat alle `variabelen` uit de _Animal_ `klasse` toegepast kunnen worden voor alle `klassen` die je net hebt aangemaakt. Je kan dit oplossen door alles over te typen of te kopiëren. Echter heb je dan heel veel dubbele code in je applicatie. Dat is niet zo netjes. Maak van de _Animal_ `klasse` een `superklasse` waar geen niewe instantie van aangemaakt mag worden. Dit laatste kan je doen door de `klasse` `abstract` te maken.  
+10. `Extent` nu de `superklasse` in alle andere `klassen`. 
+11. Maak nu een `constructor` aan in elk van de dieren `klassen`, kun je deze de `attributen` meegeven van de `superklasse`.
+12. Dit maakt het mogelijk om van elke `sub klasse` een `object` te instantiëren in de `public static void main` methode in je _Main_ `klasse`. Doe dit door bijvoorbeeld _Crocodile crocodile = new Crocodile(.....)_ erin te zetten. (zet op de puntjes de waarden van de `attributen`)
 12. In de _Animal_ `klasse` had je ook `methodes` staan. Wat gebeurt er als je met een instantiatie van je _Crocodile_ `klasse`, één van deze `methodes` aanroept?
 13. Nu kan je voor elk dier deze `methode` aanroepen, en hoef je niet de `methode` voor elke `klassen` weer uit te schrijven. Maar... de crocodile met de `methode` _makesSound()_ geeft hetzelfde als dolphin. Dát is wel raar, want deze klinken niet hetzelfde.
 14. Laten we dit oplossen door alle `methodes` van de _Animal_ `klasse` in een `interface` te zetten. Geef deze `interface` de naam _MainFeatures_ en plaats hier alle `methodes` (Niet de `getters` en `setters`) in.
@@ -74,5 +74,5 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
  - _walking()_;
  - _flies()_;  
 21. Implementeer de `interfaces` op de juiste `klassen` en geef de `methodes` hun eigen toepasselijke zin om te printen.
-22. We hebben tot nu toe gebruik gemaakt van de `String` _gender_, maar eigenlijk willen we die omzetten naar een `Enumeratie` of wel een `Enum`. Dit wordt voorgedaan in de workshop bij deze opdracht.  
+22. We hebben tot nu toe gebruik gemaakt van de `String` _gender_, maar eigenlijk willen we die omzetten naar een `Enumeratie` of wel een `Enum`. Dit wordt voorgedaan in de les voor deze opdracht.  
 23. Gefeliciteerd! Je applicatie is klaar voor gebruik. Probeer vanuit je _main_ `methode` te experimenteren met wat allemaal mogelijk is en kijk of je misschien nieuwe dieren en of `methodes` kan toevoegen aan je applicatie.
