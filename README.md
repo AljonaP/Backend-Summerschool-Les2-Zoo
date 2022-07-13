@@ -25,8 +25,8 @@ Alle methodes mogen `void` teruggeven en een `system.out.println` uitvoeren.
 Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waar je moet beginnen kun je dit stappenplan volgen.
 1. Maak een _Main_-`klasse` aan in de `src`-map.
 2. Maak vervolgens binnen de _main_-`klasse` een _main_-`methode` aan. Anders kun je de applicatie niet draaien!
-3. Maak een _Animal_ klasse aan.
-4. In de _Animal_ klasse maken we `variabelen` aan voor:
+3. Maak een _Animal_ `klasse` aan.
+4. In de _Animal_ `klasse` maken we `variabelen` aan voor:
 - `String` _name_;
 - `String` _feature_;
 - `String` _dateOfBirth_;
@@ -44,7 +44,7 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
 - _swims()_;
 - _walks()_;
 - _flies()_;
-- _reproduction()_ *(maak van deze `methode` een` if statement` die checkt of de waarde van _givesBirth_ waar of onwaar is. Bij `true` print je de tekst "Giving brith for reproduction", bij `false` de tekst "lays eggs for reproduction");
+- _reproduction()_ *(maak van deze `methode` een` if statement` die checkt of de waarde van _givesBirth_ waar of onwaar is. Bij `true` print je de tekst "Gives brith for reproduction", bij `false` de tekst "lays eggs for reproduction");
 8. Maak de volgende nieuwe klassen aan:
 - _Crocodile_;
 - _Dolphin_;
@@ -54,7 +54,7 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
 9. Je ziet nu dat alle `variabelen` uit de _Animal_ `klasse` toegepast kunnen worden voor alle `klassen` die je net hebt aangemaakt. Je kan dit oplossen door alles over te typen of te kopiëren. Echter heb je dan heel veel dubbele code in je applicatie. Dat is niet zo netjes. Maak van de _Animal_ `klasse` een `superklasse` waar geen niewe instantie van aangemaakt mag worden. Dit laatste kan je doen door de `klasse` `abstract` te maken.  
 10. `Extent` nu de `superklasse` in alle andere `klassen`. 
 11. Maak nu een `constructor` aan in elk van de dieren `klassen`, kun je deze de `attributen` meegeven van de `superklasse`.
-12. Dit maakt het mogelijk om van elke `sub klasse` een `object` te instantiëren in de `public static void main` methode in je _Main_ `klasse`. Doe dit door bijvoorbeeld _Crocodile crocodile = new Crocodile(.....)_ erin te zetten. (zet op de puntjes de waarden van de `attributen`)
+12. Dit maakt het mogelijk om van elke `subklasse` een `object` te instantiëren in de `public static void main` methode in je _Main_ `klasse`. Doe dit door bijvoorbeeld _Crocodile crocodile = new Crocodile(.....)_ erin te zetten. (zet op de puntjes de waarden van de `attributen`)
 12. In de _Animal_ `klasse` had je ook `methodes` staan. Wat gebeurt er als je met een instantiatie van je _Crocodile_ `klasse`, één van deze `methodes` aanroept?
 13. Nu kan je voor elk dier deze `methode` aanroepen, en hoef je niet de `methode` voor elke `klassen` weer uit te schrijven. Maar... de crocodile met de `methode` _makesSound()_ geeft hetzelfde als dolphin. Dát is wel raar, want deze klinken niet hetzelfde.
 14. Laten we dit oplossen door alle `methodes` van de _Animal_ `klasse` in een `interface` te zetten. Geef deze `interface` de naam _MainFeatures_ en plaats hier alle `methodes` (Niet de `getters` en `setters`) in.
