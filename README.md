@@ -65,12 +65,12 @@ Het is uitdagender om jouw eigen stappenplan te maken, maar als je niet weet waa
 19.Je houdt de volgende `methodes` over in de `klasse` _MainFeatures_:
  - _makesSound()_;
  - _getsFood()_;
- - _swimming()_;
+ - _swims()_;
  - _walking()_;
  - _flies()_.
  Deze `methodes` zijn niet voor elk dier van toepassing, maar als we een `interface` `implementeren` in een `klasse` moeten we wel alle `methodes` implementeren. Dit kan je oplossen door de laatste drie `methodes`, in een eigen `interface` te plaatsen. We kunnen namelijk meerdere `interfaces` `implementeren` in een `klasse`. 
 20. Maak voor elk van de volgende `methodes` een eigen `interface`:
- - _swimming()_;
+ - _swims()_;
  - _walking()_;
  - _flies()_;  
 21. Implementeer de `interfaces` op de juiste `klassen` en geef de `methodes` hun eigen toepasselijke zin om te printen.
