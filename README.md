@@ -13,7 +13,7 @@ Je gaat een applicatie programmeren die meerdere nieuwe dieren kan aanmaken. De 
 
 De applicatie moet voldoen aan het volgende:
 
-- Een `Superklasse`: "Animal";
+- Een `Superklasse`: "Animal", met 2 constructors, getters, setters en een aantal `fields` waaronder "name", "species", "givesBirth", "gender" en bedenk er zelf nog wat. Ook heeft de superklasse een methode die, afhankeleijk van de waarde van "givesBirth", aangeeft of het dier eieren legt of niet;
 - 5 `subklassen`: "Dolphin", "Crocodile", "Flamingo", "Penguin" en "Shark".;
 - Een _Main_-klasse met een _main_-`methode` waarin de subklassen worden geïnstantieerd en je een aantal methodes van deze objecten aanroept;
 - 4 `interfaces`: "Flying", "MainFeatures", "Swimming", "Walking". In alle Interfaces beschrijf je minstens 1 relevante methode, behalve in MainFeatures, daar geef je minstens 2 methodes die niet in een van de andere interfaces thuis horen. ;
